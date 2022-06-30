@@ -1,1 +1,1 @@
-"# angular-mentoring" 
+"#angular-mentoring" 
