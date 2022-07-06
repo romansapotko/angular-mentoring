@@ -1,0 +1,59 @@
+.search {
+  width: 95%;
+  max-width: 240px;
+  height: 36px;
+  box-sizing: border-box;
+  padding: 9px 12px;
+  border: 1px solid #ced0db;
+  background: #fff;
+  color: #acafbf;
+  font-size: 14px;
+  line-height: 18px;
+
+  &-container {
+    padding-top: 21px;
+  }
+
+  &-btn {
+    max-width: 73px;
+    border-width: 0;
+    margin-left: 12px;
+    background-color: #67a300;
+    color: #fff;
+    font-size: 14px;
+  }
+}
+
+.add-course-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 17px;
+}
+
+.add-course-btn {
+  border-width: 0;
+  background: #009ecc;
+  color: #fff;
+}
+
+.load-more {
+  &-container {
+    display: flex;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px 0 rgba(29,30,38,0.1), 0 2px 10px 0 rgba(29,30,38,0.15);
+  }
+
+  &-btn {
+    border: none;
+    background-color: inherit;
+    color: #5681ee;
+    font-size: 12px;
+    line-height: 24px;
+    text-decoration: underline;
+  }
+}

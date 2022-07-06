@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&family=Source+Sans+Pro:wght@400;700&display=swap");
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  background-color: #f5f6fa;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  width: 95%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.btn-lg, .btn-md {
+  border-radius: 3px;
+}
+
+.btn-lg {
+  height: 36px;
+}
+
+.btn-md {
+  height: 24px;
+}
