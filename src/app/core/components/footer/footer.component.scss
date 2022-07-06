@@ -1,0 +1,15 @@
+:host {
+  background: #303240;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 16px 0;
+
+  p {
+    color: #fff;
+    font-size: 12px;
+  }
+}
