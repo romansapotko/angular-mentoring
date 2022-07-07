@@ -1,5 +1,5 @@
 @import "~reset.css";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
 
 html,
 body {
@@ -18,14 +18,50 @@ body {
   margin: 0 auto;
 }
 
-.btn-lg, .btn-md {
+.btn {
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  border-width: 0;
   border-radius: 3px;
+  cursor: pointer;
+  font-family: "Source Sans Pro", sans-serif;
+  transition: color 300ms ease-in-out;
+}
+
+.btn-blue {
+  background: #009ecc;
+  color: #fff;
+}
+
+.btn-green {
+  background-color: #67a300;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #006c8c;
+  transition: color 300ms ease-in-out;
 }
 
 .btn-lg {
-  height: 36px;
+  padding: 10px 6px;
+  font-size: 14px;
+  line-height: 24px; // calc(24/14); //  24px; // calc()
+
+  .material-symbols-outlined {
+    font-size: inherit;
+  }
 }
 
 .btn-md {
-  height: 24px;
+  padding: 10px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1; // calc(24/14); //  24px; // calc()
+
+  .material-symbols-outlined {
+    font-size: inherit;
+  }
 }

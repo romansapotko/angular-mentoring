@@ -10,10 +10,8 @@
     "lint": "npm run lint:scss && npm run lint:ts",
     "lint:scss": "stylelint src/**/*.scss --fix",
     "lint:ts": "ng lint",
+    "prettier": "prettier --write src/**/*.ts",
     "build:prod": "ng build --configuration production --base-href \"https://romansapotko.github.io/angular-mentoring/\""
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
   },
   "private": true,
   "dependencies": {
@@ -43,6 +41,8 @@
     "@typescript-eslint/eslint-plugin": "5.29.0",
     "@typescript-eslint/parser": "5.29.0",
     "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.1",
     "jasmine-core": "~4.1.0",
     "karma": "~6.3.0",

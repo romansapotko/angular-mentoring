@@ -1,8 +1,36 @@
 <div class="course">
-  <h2 class="course-title">
-    {{ course.title}}
-  </h2>
-  <p class="course-description">
-    {{ course.description}}
-  </p>
+  <div class="course-header">
+    <h2 class="course-header__title">
+      {{ course.title}}
+    </h2>
+    <span class="course-header__datetime">
+       <span class="material-symbols-outlined">
+        add
+       </span>
+       1h40m
+    </span>
+    <span class="course-header__datetime">
+      <span class="material-symbols-outlined">
+       delete
+      </span>
+      22.05.2020
+   </span>
+  </div>
+
+
+  <div class="course-container">
+    <p class="course-description">
+      {{ course.description}}
+    </p>
+    <button class="btn btn-md btn-blue btn-edit">
+      <span class="material-symbols-outlined">
+        edit
+        </span>
+        Edit</button>
+    <button class="btn btn-md btn-blue btn-delete">
+      <span class="material-symbols-outlined">
+        delete
+        </span>
+        Delete</button>
+  </div>
 </div>
