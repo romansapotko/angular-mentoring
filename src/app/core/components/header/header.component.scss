@@ -44,14 +44,34 @@
   }
 }
 
+.logo:hover {
+  color:#0079ad;
+  transition: color 300ms ease-in-out;
+}
+
 .account-btn {
+  display: flex;
+  align-items: center;
   border: none;
   background: none;
   color: #fff;
+  cursor: pointer;
   font-size: 14px;
   line-height: 24px;
+  transition: color 300ms ease-in;
+
+  span {
+    margin-right: 8px;
+    font-size: inherit;
+    line-height: inherit;
+  }
 
   &:last-child {
     margin-left: 12px;
   }
+}
+
+.account-btn:hover {
+  color: #009ecc;
+  transition: color 300ms ease-in-out;
 }

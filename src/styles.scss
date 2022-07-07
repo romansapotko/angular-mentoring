@@ -27,7 +27,7 @@ body {
   border-radius: 3px;
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
-  transition: color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
 }
 
 .btn-blue {
@@ -42,7 +42,7 @@ body {
 
 .btn-blue:hover {
   background-color: #006c8c;
-  transition: color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
 }
 
 .btn-lg {

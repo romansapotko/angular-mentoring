@@ -12,6 +12,7 @@
 
   &-description {
     margin-top: 8px;
+    margin-right: 40px;
     color: #474a59;
     font-size: 14px;
     line-height: 1;
@@ -26,10 +27,27 @@
       color: #333;
       font-size: 24px;
       font-weight: 600;
+      line-height: 32px;
     }
 
     &__datetime {
       color: #000;
+      color: #858997;
+      font-size: 14px;
+      line-height: 18px;
+
+      &-wrapper {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      span {
+        font-size: inherit;
+      }
+
+      &:last-child {
+        margin-left: 26px;
+      }
     }
   }
 
@@ -46,4 +64,8 @@
 .btn-delete {
   min-width: 72px;
   margin-left: 12px;
+}
+
+.edit-icon, .delete-icon {
+  margin-right: 10px;
 }
