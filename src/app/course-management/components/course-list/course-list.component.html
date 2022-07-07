@@ -1,14 +1,16 @@
 <div class="search-container">
-  <input class="search btn-lg" type="text" placeholder="Type to search">
-  <button class="search-btn btn-lg">Search</button>
+  <input  class="btn btn-lg search" placeholder="Type to search" [(ngModel)]="searchCourse">
+  <button class="btn btn-lg btn-green search-btn" (click)="search()">Search</button>
 </div>
 <div class="add-course-container">
-  <button class="add-course-btn btn-lg">Add course</button>
+  <button class="btn btn-lg btn-blue add-course-btn">
+    <span class="material-symbols-outlined">
+      add
+      </span>Add course</button>
 </div>
 <div *ngFor="let course of courses">
-  <app-course [course]="course"></app-course>
+  <app-course [course]="course" (deleteCourse)="onDeleteCourse($event)"></app-course>
 </div>
 <div class="load-more-container">
-  <button class="load-more-btn">Load more</button>
-  <!-- <a href="#"> Load more</a> -->
+  <button class="load-more-btn" (click)="loadMore()">Load more</button>
 </div>

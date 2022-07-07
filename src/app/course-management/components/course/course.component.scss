@@ -1,6 +1,6 @@
 .course {
   display: flex;
-  height: 140px;
+  min-height: 140px;
   box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
@@ -12,14 +12,60 @@
 
   &-description {
     margin-top: 8px;
+    margin-right: 40px;
     color: #474a59;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1;
   }
 
-  &-title {
-    color: #333;
-    font-size: 24px;
-    font-weight: 600;
+  &-header {
+    display: flex;
+    align-items: center;
+
+    &__title {
+      margin-right: auto;
+      color: #333;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+    }
+
+    &__datetime {
+      color: #000;
+      color: #858997;
+      font-size: 14px;
+      line-height: 18px;
+
+      &-wrapper {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      span {
+        font-size: inherit;
+      }
+
+      &:last-child {
+        margin-left: 26px;
+      }
+    }
   }
+
+  &-container{
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.btn-edit {
+  min-width: 60px;
+}
+
+.btn-delete {
+  min-width: 72px;
+  margin-left: 12px;
+}
+
+.edit-icon, .delete-icon {
+  margin-right: 10px;
 }

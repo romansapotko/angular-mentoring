@@ -1,8 +1,36 @@
 <div class="course">
-  <h2 class="course-title">
-    {{ course.title}}
-  </h2>
-  <p class="course-description">
-    {{ course.description}}
-  </p>
+  <div class="course-header">
+    <h2 class="course-header__title">
+      {{ course.title}}
+    </h2>
+    <div class="course-header__datetime-wrapper">
+      <span class="course-header__datetime">
+        <span class="material-symbols-outlined">
+          schedule
+        </span>
+        1h 40min
+      </span>
+      <span class="course-header__datetime">
+        <span class="material-symbols-outlined">
+          calendar_month
+        </span>
+        22.05.2022
+      </span>
+    </div>
+  </div>
+  <div class="course-container">
+    <p class="course-description">
+      {{ course.description}}
+    </p>
+    <button class="btn btn-md btn-blue btn-edit">
+      <span class="material-symbols-outlined edit-icon">
+        edit
+        </span>
+        Edit</button>
+    <button class="btn btn-md btn-blue btn-delete" (click)="delete()">
+      <span class="material-symbols-outlined delete-icon">
+        delete
+        </span>
+        Delete</button>
+  </div>
 </div>

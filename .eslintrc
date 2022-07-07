@@ -16,7 +16,8 @@
       },
       "extends": [
         "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/template/process-inline-templates"
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:prettier/recommended"
       ],
       "rules": {
         "@angular-eslint/directive-selector": [
@@ -34,7 +35,24 @@
             "prefix": "app",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "@typescript-eslint/member-ordering": [
+          "error",
+          {
+            "default": [
+              "public-field",
+              "protected-field",
+              "private-field",
+              "constructor",
+              "get",
+              "set",
+              "public-method",
+              "protected-method",
+              "private-method"
+            ]
+          }
+        ],
+        "no-console": "warn"
       }
     },
     {
