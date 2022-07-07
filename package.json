@@ -6,12 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
+    "test": "ng test --browsers ChromeHeadless",
     "lint": "npm run lint:scss && npm run lint:ts",
     "lint:scss": "stylelint src/**/*.scss --fix",
     "lint:ts": "ng lint",
-    "build:prod": "ng build --configuration production --base-href \"https://romansapotko.github.io/angular-mentoring/\"",
-    "prepare": "husky install"
+    "build:prod": "ng build --configuration production --base-href \"https://romansapotko.github.io/angular-mentoring/\""
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
