@@ -25,7 +25,18 @@ export class CourseListComponent implements OnInit {
   }
 
   loadMore(): void {
-    console.log('load more courses...');
+    const index = this.courses.length + 1;
+
+    this.courses.push({
+      id: index,
+      title: `Course ${index}`,
+      description:
+        'Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course  find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. ',
+    });
+  }
+
+  trackBy(index: number, course: Course) {
+    return course.id;
   }
 
   private setCourses(): void {
