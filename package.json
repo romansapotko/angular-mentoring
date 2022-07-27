@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test --browsers ChromeHeadless",
+    "test": "ng test --browsers ChromeHeadless --code-coverage",
     "lint": "npm run lint:scss && npm run lint:ts",
     "lint:scss": "stylelint src/**/*.scss --fix",
     "lint:ts": "ng lint",
