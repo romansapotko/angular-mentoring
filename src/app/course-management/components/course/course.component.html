@@ -18,13 +18,15 @@
     <p class="course-description">
       {{ course.description }}
     </p>
-    <button class="btn btn-md btn-blue btn-edit">
-      <span class="material-symbols-outlined edit-icon"> edit </span>
-      Edit
-    </button>
-    <button class="btn btn-md btn-blue btn-delete" (click)="delete()">
-      <span class="material-symbols-outlined delete-icon"> delete </span>
-      Delete
-    </button>
+    <div class="course-buttons">
+      <button class="btn btn-md btn-blue btn-edit">
+        <span class="material-symbols-outlined edit-icon"> edit </span>
+        Edit
+      </button>
+      <button class="btn btn-md btn-blue btn-delete" (click)="delete()">
+        <span class="material-symbols-outlined delete-icon"> delete </span>
+        Delete
+      </button>
+    </div>
   </div>
 </div>

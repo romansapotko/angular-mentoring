@@ -16,6 +16,10 @@
     color: #474a59;
     font-size: 14px;
     line-height: 1;
+
+   @media (max-width: 768px) {
+    margin-right: 0;
+   }
   }
 
   &-header {
@@ -54,6 +58,20 @@
   &-container{
     display: flex;
     align-items: flex-start;
+
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &-buttons {
+    display: flex;
+
+    @media (max-width: 768px) {
+      align-self: end;
+    }
   }
 }
 
