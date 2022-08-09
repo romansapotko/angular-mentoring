@@ -6,7 +6,7 @@
   </button>
 </div>
 <div class="add-course-container">
-  <button class="btn btn-lg btn-blue add-course-btn">
+  <button (click)="loadMore()" class="btn btn-lg btn-blue add-course-btn">
     <span class="material-symbols-outlined"> add </span>
     Add course
   </button>
@@ -14,6 +14,9 @@
 <div *ngFor="let course of courses; trackBy: trackBy">
   <app-course [course]="course" (deleteCourse)="onDeleteCourse($event)"></app-course>
 </div>
-<div class="load-more-container">
+<div class="no-data-container" *ngIf="!courses || !courses.length">
+  <p> No data. Feel free to add new courses.</p>
+</div>
+<div *ngIf="courses && courses.length" class="load-more-container">
   <button class="load-more-btn" (click)="loadMore()">Load more</button>
 </div>
