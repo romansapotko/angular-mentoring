@@ -8,9 +8,9 @@
         <span class="material-symbols-outlined"> schedule </span>
         1h 40min
       </span>
-      <span class="course-header__datetime">
+      <span [appCreationDate]="course.creationDate" class="course-header__datetime">
         <span class="material-symbols-outlined"> calendar_month </span>
-        22.05.2022
+        {{ course.creationDate | date:'dd.MM.yyyy'}}
       </span>
     </div>
   </div>

@@ -5,9 +5,10 @@ import { CourseListComponent } from './components/course-list/course-list.compon
 import { CourseComponent } from './components/course/course.component';
 import { FormsModule } from '@angular/forms';
 import { CourseRoutingModule } from './course-routing.module';
+import { CreationDateDirective } from './utils/creation-date.directive';
 
 @NgModule({
-  declarations: [CourseListComponent, CourseComponent],
+  declarations: [CourseListComponent, CourseComponent, CreationDateDirective],
   imports: [CommonModule, FormsModule, CourseRoutingModule],
 })
 export class CourseModule {}

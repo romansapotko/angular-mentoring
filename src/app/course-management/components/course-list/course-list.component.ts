@@ -30,6 +30,7 @@ export class CourseListComponent implements OnInit {
     this.courses.push({
       id: index,
       title: `Course ${index}`,
+      creationDate: new Date('11-10-2022'),
       description:
         'Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course  find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. ',
     });
@@ -44,24 +45,28 @@ export class CourseListComponent implements OnInit {
       {
         id: 1,
         title: 'Course 1',
+        creationDate: new Date('01-01-2022'),
         description:
           'Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course  find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. ',
       },
       {
         id: 2,
         title: 'Course 2',
+        creationDate: new Date('08-08-2022'),
         description:
           'Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course find course  find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. ',
       },
       {
         id: 3,
         title: 'Course 3',
+        creationDate: new Date('08-01-2022'),
         description:
           'Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course  find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. ',
       },
       {
         id: 4,
         title: 'Course 4',
+        creationDate: new Date('08-02-2022'),
         description:
           'Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course find course  find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. ',
       },
