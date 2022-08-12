@@ -46,7 +46,7 @@ export class CourseListComponent implements OnInit {
         id: 1,
         title: 'Course 1',
         duration: 120,
-        creationDate: new Date('01-01-2022'),
+        creationDate: new Date('12-12-2022'),
         description:
           'Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course  find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. ',
       },

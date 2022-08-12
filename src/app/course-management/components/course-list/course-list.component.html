@@ -11,7 +11,7 @@
     Add course
   </button>
 </div>
-<div *ngFor="let course of courses; trackBy: trackBy">
+<div *ngFor="let course of courses | orderBy; trackBy: trackBy ">
   <app-course [course]="course" (deleteCourse)="onDeleteCourse($event)"></app-course>
 </div>
 <div class="no-data-container" *ngIf="!courses || !courses.length">

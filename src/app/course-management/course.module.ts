@@ -7,9 +7,10 @@ import { FormsModule } from '@angular/forms';
 import { CourseRoutingModule } from './course-routing.module';
 import { CreationDateDirective } from './utils/creation-date.directive';
 import { DurationPipe } from './utils/duration.pipe';
+import { OrderByPipe } from './utils/order-by.pipe';
 
 @NgModule({
-  declarations: [CourseListComponent, CourseComponent, CreationDateDirective, DurationPipe],
+  declarations: [CourseListComponent, CourseComponent, CreationDateDirective, DurationPipe, OrderByPipe],
   imports: [CommonModule, FormsModule, CourseRoutingModule],
 })
 export class CourseModule {}
