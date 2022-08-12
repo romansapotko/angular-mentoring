@@ -45,6 +45,7 @@ export class CourseListComponent implements OnInit {
       {
         id: 1,
         title: 'Course 1',
+        duration: 120,
         creationDate: new Date('01-01-2022'),
         description:
           'Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course  find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. ',
@@ -52,6 +53,7 @@ export class CourseListComponent implements OnInit {
       {
         id: 2,
         title: 'Course 2',
+        duration: 100,
         creationDate: new Date('08-08-2022'),
         description:
           'Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course find course  find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. ',
@@ -59,6 +61,7 @@ export class CourseListComponent implements OnInit {
       {
         id: 3,
         title: 'Course 3',
+        duration: 40,
         isTopRated: true,
         creationDate: new Date('08-01-2022'),
         description:
@@ -67,6 +70,7 @@ export class CourseListComponent implements OnInit {
       {
         id: 4,
         title: 'Course 4',
+        duration: 270,
         creationDate: new Date('08-02-2022'),
         description:
           'Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course find course  find course descriptions, what information they include, how they work, and details about various components of a course description. Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. ',

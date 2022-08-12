@@ -5,9 +5,9 @@
       <span *ngIf="course.isTopRated" class="material-symbols-outlined top-rated"> star </span>
     </h2>
     <div class="course-header__datetime-wrapper">
-      <span class="course-header__datetime">
+      <span *ngIf="course.duration" class="course-header__datetime">
         <span class="material-symbols-outlined"> schedule </span>
-        1h 40min
+        {{course.duration | duration}}
       </span>
       <span [appCreationDate]="course.creationDate" class="course-header__datetime">
         <span class="material-symbols-outlined"> calendar_month </span>
