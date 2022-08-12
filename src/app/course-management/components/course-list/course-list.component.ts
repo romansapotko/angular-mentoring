@@ -1,19 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from '../../models/course';
+import { FilterPipe } from '../../utils/filter.pipe';
 
 @Component({
   selector: 'app-course-list',
   templateUrl: './course-list.component.html',
   styleUrls: ['./course-list.component.scss'],
+  providers: [FilterPipe],
 })
 export class CourseListComponent implements OnInit {
   courses!: Course[];
   searchCourse: string = '';
 
-  constructor() {}
+  constructor(private readonly filterPipe: FilterPipe) {}
 
   ngOnInit(): void {
-    this.setCourses();
+    this.courses = this.initCourses();
   }
 
   onDeleteCourse(courseId: number) {
@@ -21,7 +23,7 @@ export class CourseListComponent implements OnInit {
   }
 
   search(): void {
-    console.log(this.searchCourse);
+    this.courses = this.filterPipe.transform(this.initCourses(), this.searchCourse);
   }
 
   loadMore(): void {
@@ -40,8 +42,8 @@ export class CourseListComponent implements OnInit {
     return course.id;
   }
 
-  private setCourses(): void {
-    this.courses = [
+  private initCourses(): Course[] {
+    return [
       {
         id: 1,
         title: 'Course 1',

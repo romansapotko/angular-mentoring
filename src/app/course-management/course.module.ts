@@ -8,9 +8,10 @@ import { CourseRoutingModule } from './course-routing.module';
 import { CreationDateDirective } from './utils/creation-date.directive';
 import { DurationPipe } from './utils/duration.pipe';
 import { OrderByPipe } from './utils/order-by.pipe';
+import { FilterPipe } from './utils/filter.pipe';
 
 @NgModule({
-  declarations: [CourseListComponent, CourseComponent, CreationDateDirective, DurationPipe, OrderByPipe],
+  declarations: [CourseListComponent, CourseComponent, CreationDateDirective, DurationPipe, OrderByPipe, FilterPipe],
   imports: [CommonModule, FormsModule, CourseRoutingModule],
 })
 export class CourseModule {}

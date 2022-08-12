@@ -1,5 +1,5 @@
 <div class="search-container">
-  <input class="control search" placeholder="Type to search" [(ngModel)]="searchCourse" />
+  <input class="control search" placeholder="Type to search" [(ngModel)]="searchCourse" (blur)="search()" />
   <button class="btn btn-lg btn-green search-btn" (click)="search()">
     <span class="material-symbols-outlined"> search </span>
     Search
