@@ -1,7 +1,8 @@
 <div class="course">
   <div class="course-header">
-    <h2 class="course-header__title">
+    <h2 class="course-header__title" [ngClass]="{'top-rated' : course.isTopRated}">
       {{ course.title }}
+      <span *ngIf="course.isTopRated" class="material-symbols-outlined top-rated"> star </span>
     </h2>
     <div class="course-header__datetime-wrapper">
       <span class="course-header__datetime">

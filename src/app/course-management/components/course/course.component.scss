@@ -32,6 +32,8 @@
       font-size: 24px;
       font-weight: 600;
       line-height: 32px;
+      display: flex;
+      align-items: center;
     }
 
     &__datetime {
@@ -86,4 +88,8 @@
 
 .edit-icon, .delete-icon {
   margin-right: 10px;
+}
+
+.top-rated {
+  color: gold;
 }
