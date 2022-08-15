@@ -16,6 +16,10 @@
     color: #474a59;
     font-size: 14px;
     line-height: 1;
+
+   @media (max-width: 768px) {
+    margin-right: 0;
+   }
   }
 
   &-header {
@@ -28,6 +32,8 @@
       font-size: 24px;
       font-weight: 600;
       line-height: 32px;
+      display: flex;
+      align-items: center;
     }
 
     &__datetime {
@@ -54,6 +60,20 @@
   &-container{
     display: flex;
     align-items: flex-start;
+
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &-buttons {
+    display: flex;
+
+    @media (max-width: 768px) {
+      align-self: end;
+    }
   }
 }
 
@@ -68,4 +88,8 @@
 
 .edit-icon, .delete-icon {
   margin-right: 10px;
+}
+
+.top-rated {
+  color: gold;
 }
